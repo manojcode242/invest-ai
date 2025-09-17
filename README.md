@@ -62,7 +62,7 @@ streamlit run in_ai.py
 ## ⚙️ How It Works
 
 1. **Provide Stock Symbols**  
-   - Enter the symbols of **two assets** you want to compare in the sidebar.
+   * Enter the symbols of **two assets** you want to compare in the sidebar.
 
 2. **Data Retrieval & Processing**  
    - **Company Info:** Fetched via `yfinance`, including name, sector, industry, and market capitalization.  
@@ -70,8 +70,8 @@ streamlit run in_ai.py
    - **Price Trends:** Last six months of closing prices visualized as interactive line charts.
 
 3. **AI Analysis**  
-   - The `Agent` class uses **Groq LLM** to generate a **professional investment report**.  
-   - The report compares fundamentals, trends, and risks, and provides actionable recommendations.
+   * The `Agent` class uses **Groq LLM** to generate a **professional investment report**.  
+   * The report compares fundamentals, trends, and risks, and provides actionable recommendations.
 
 4. **Results Displayed**   
      - Company information tables  
