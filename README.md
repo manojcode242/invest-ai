@@ -1,10 +1,10 @@
 # 📊 AI Investment Dashboard
 
-## AI Investment Dashboard is a modern, interactive web application that helps investors and traders compare stocks and crypto assets, track portfolio performance, and receive AI-driven investment insights. The dashboard combines real-time financial data with Groq-powered LLM analysis to deliver actionable, concise investment recommendations.
+### AI Investment Dashboard is a modern, interactive web application that helps investors and traders compare stocks and crypto assets, track portfolio performance, and receive AI-driven investment insights. The dashboard combines real-time financial data with Groq-powered LLM analysis to deliver actionable, concise investment recommendations.
 
 
 
-# ✨  Features : 
+## ✨  Features : 
 
 ### 📈 Stock & Crypto Comparison : Compare two or more assets side-by-side.
 
@@ -18,7 +18,7 @@
 
 
 
-# 🛠 Technology Stack
+## 🛠 Technology Stack
 
 ### 🖥 Frontend / UI : ```streamlit``` Interactive and responsive dashboards for seamless user experience
 
