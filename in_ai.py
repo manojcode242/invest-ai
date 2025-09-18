@@ -11,7 +11,11 @@ from agno.models.groq import Groq
 # ==============================
 st.set_page_config(page_title="AI Investment Dashboard", page_icon="📊", layout="wide")
 load_dotenv()
-groq_api_key = os.getenv("GROQ_API_KEY", "")
+groq_api_key = os.getenv("GROQ_API_KEY")  # Only from env, no UI input
+
+if not groq_api_key:
+    st.error("❌ Groq API Key not found. Please set GROQ_API_KEY in your .env or environment variables.")
+    st.stop()
 
 # ==============================
 # Helper functions
@@ -50,19 +54,15 @@ st.title("📊 AI Investment Dashboard")
 st.caption("Compare company fundamentals, stock performance, and AI analysis.")
 
 with st.sidebar:
-    st.header("📈 Stock Comparison Panel")
-    if not groq_api_key:
-        groq_api_key = st.text_input("Enter Groq API Key", type="password")
-
+    st.header("📈 Stock Panel")
     stock1 = st.text_input("Stock 1 Symbol", value="AAPL")
     stock2 = st.text_input("Stock 2 Symbol", value="MSFT")
-
     run_analysis = st.button("Run Analysis")
 
 # ==============================
 # Main Content
 # ==============================
-if run_analysis and groq_api_key and stock1 and stock2:
+if run_analysis and stock1 and stock2:
     col1, col2 = st.columns(2)
 
     # --- Company Info ---
